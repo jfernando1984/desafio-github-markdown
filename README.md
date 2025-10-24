@@ -57,6 +57,30 @@ Para o pleno funcionamento dessa pasta, é necessário instalar o Flatpak, segue
 Necessário efetuar o comando `chmod +x` para dar permissão de execução. O objetivo do script `atualizar-sistema.sh`, é pra quando fazer o login, que as atualizações sejam efetuadas. Basta incluir esse script na inicialização nas opções do seu ambiente gráfico. O objetivo do `funcionar-virtualbox.sh` é pra quando eu tiver com o kvm ativado, eu possa desativa-lo pra poder usar o Virtual Box. 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- 
 # H1
 ## H2
