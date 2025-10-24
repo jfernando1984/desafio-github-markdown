@@ -10,7 +10,8 @@ O repositório não me disponibilizou a instalação dessas fontes. Talvez ao vo
 
 `sudo apt update && sudo apt upgrade && sudo apt --fix-broken install`
 
-<!-->> sudo apt update && sudo apt upgrade && sudo apt --fix-broken install
+<!--
+>> sudo apt update && sudo apt upgrade && sudo apt --fix-broken install
 
 >>> sudo apt update && sudo apt upgrade && sudo apt --fix-broken install -->
 
@@ -26,27 +27,19 @@ Essa pasta nada mais é que a minha conjunta com o Gemini, onde resolvi uns prob
 
 # Pastas **[firewall](https://github.com/jfernando1984/linux-meus-projetos/tree/main/firewall)** e **[iptables](https://github.com/jfernando1984/linux-meus-projetos/tree/main/iptables)**
 
-_**Atenção! Use esse conteúdo com cautela. Você pode ficar até sem acesso a Internet se você não souber o que está fazendo.  Se achar muito difícil, recomendo primeiro assistir algumas aulas de iptables!**. Nesse caso, use os pacotes `ufw` e `gufw` pra administrar um Firewall!
+**Atenção! Use esse conteúdo com cautela. Você pode ficar até sem acesso a Internet se você não souber o que está fazendo.  Se achar muito difícil, recomendo primeiro assistir algumas aulas de iptables!**. Nesse caso, use os pacotes `ufw` e `gufw` pra administrar um Firewall!
 
 Na pasta iptables estão as regras do meu firewall. Eu projetei ele pra iniciar em `/etc/iptables`.  
 Então se o caminho não existir, então dê o comando `sudo mkdir -p /etc/iptables`. Baixe o conteúdo da minha pasta, e dê um `sudo cp rules.v4 rules.v6 /etc/iptables` para copiar o conteúdo para `/etc/iptables`. Edite eles conforme sua necessidade, o Log será o seu maior aliado. Para maior segurança, deixe permissão de escrita e leitura apenas para root. Para isso, dê `cd /etc/iptables && sudo chmod 600 *`. O resultado deve ser parecido com esse:
 
-
-
-
-**ls -l /etc/iptables**  
-**total 8**  
-**-rw------- 1 root root 3691 out  6 18:54 rules.v4**  
-**-rw------- 1 root root 3000 set 22 19:53 rules.v6**  
+<img width="404" height="60" alt="image" src="https://github.com/user-attachments/assets/24a25829-940b-4916-a927-2a7168d2a96d" />
 
 A pasta firewall contém o conteúdo para iniciar o serviço de um firewall iptables.  
 Dê um `cd /etc/systemd/system`, e crie um arquivo service, por exemplo, `sudo nano meufirewall-ipv4.service`,  
-e copie o conteúdo de `meufirewall-ipv4.txt`. Dê os comandos `sudo systemctl daemon-reload`, e depois o  
+e copie o conteúdo de `meufirewall-ipv4.txt`. Dê os comandos `sudo systemctl daemon-reload`,e depois o  
 `sudo systemctl enable meufirewall-ipv4.service` para que o iptables inicie no boot com as regras aplicadas.   
 Repita o processo para o ip6tables. Após alguma edição do `rules.v4` ou do `rules.v6`, é necessário reiniciar o serviço para que as regras tenham efeito imediatamente, `sudo systemctl restart meufirewall-ipv4.service` para o iptables,  
 e `sudo systemctl restart meufirewall-ipv6.service` para o ip6tables. Reinicie o Computador.
-
-
 
 # Gerenciando Drives de Nuvem com **[RClone](https://github.com/jfernando1984/linux-meus-projetos/tree/main/rclone)**
 
