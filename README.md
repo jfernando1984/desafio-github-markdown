@@ -9,6 +9,8 @@ Após eu ter instalado o Debian 13, eu tive dificuldades em encontrar as fontes 
 
 `sudo apt update && sudo apt upgrade && sudo apt --fix-broken install`
 
+> sudo apt update && sudo apt upgrade && sudo apt --fix-broken install
+
 # **[Pasta Troubleshooting](https://github.com/jfernando1984/linux-meus-projetos/tree/main/Troubleshooting)**
 
 Essa pasta nada mais é que a minha conjunta com o Gemini, onde resolvi uns problemas. Segue as tratativas resolvidas.
