@@ -27,7 +27,7 @@ Essa pasta nada mais é que a minha conjunta com o Gemini, onde resolvi uns prob
 
 # Pastas **[firewall](https://github.com/jfernando1984/linux-meus-projetos/tree/main/firewall)** e **[iptables](https://github.com/jfernando1984/linux-meus-projetos/tree/main/iptables)**
 
-**Atenção! Use esse conteúdo com cautela. Você pode ficar até sem acesso a Internet se você não souber o que está fazendo.  Se achar muito difícil, recomendo primeiro assistir algumas aulas de iptables!**. Nesse caso, use os pacotes `ufw` e `gufw` pra administrar um Firewall!
+**Atenção! Use esse conteúdo com cautela! Você pode ficar até sem acesso a Internet se você não souber o que está fazendo.  Se achar muito difícil, recomendo primeiro assistir algumas aulas de iptables!**. Nesse caso, use os pacotes `ufw` e `gufw` pra administrar um Firewall!
 
 Na pasta iptables estão as regras do meu firewall. Eu projetei ele pra iniciar em `/etc/iptables`.  
 Então se o caminho não existir, então dê o comando `sudo mkdir -p /etc/iptables`. Baixe o conteúdo da minha pasta, e dê um `sudo cp rules.v4 rules.v6 /etc/iptables` para copiar o conteúdo para `/etc/iptables`. Edite eles conforme sua necessidade, o Log será o seu maior aliado. Para maior segurança, deixe permissão de escrita e leitura apenas para root. Para isso, dê `cd /etc/iptables && sudo chmod 600 *`. O resultado deve ser parecido com esse:
