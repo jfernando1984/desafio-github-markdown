@@ -1,7 +1,7 @@
 # desafio-github-markdown
 Desafio de Projeto da DIO
 
-Esse repositório visa facilitar o meu dia a dia no uso do meu sistema Debian. Então aqui eu estarei documentando tudo que você precisa saber sobre ele.
+Esse repositório visa facilitar o meu dia a dia no uso do meu sistema Debian. Então aqui eu estarei documentando tudo que você precisa saber sobre o conteúdo das pastas e arquivos desse repositório. 
 
 # **[Pasta Debian](https://github.com/jfernando1984/linux-meus-projetos/tree/main/Debian)**
 
